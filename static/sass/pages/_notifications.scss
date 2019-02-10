@@ -1,0 +1,106 @@
+.notifications {
+    max-width: 500px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 20px;
+        color: #555;
+        padding: 15px;
+    }
+}
+
+.notifications-inner {
+    .no-notifications {
+        padding: 50px 40px;
+        text-align: center;
+        color: #999;
+
+        .icons {
+            font-size: 60px;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            font-size: 14px;
+            font-weight: 600;
+
+            span {
+                display: block;
+                font-size: 13px;
+                font-weight: normal;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            display: block;
+            padding: 15px;
+            overflow: auto;
+            color: #555;
+            border-left: 2px solid transparent;
+
+            &:hover, &.new {
+                opacity: 1;
+                background-color: $accent-light-inner;
+                color: #444;
+            }
+
+            &.new {
+                border-left: 2px solid #08c;
+            }
+
+            &.view-all {
+                text-align: center;
+                color: darken(#aeb6bb, 10%);
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+
+        .float-left {
+            width: 38px;
+            margin-right: 15px;
+            height: 38px;
+
+            img {
+                display: inline-block;
+                width: 38px;
+                height: 38px;
+                border-radius: 100%;
+            }
+        }
+
+        .float-right {
+            float: none !important;
+            margin-top: -2px;
+            line-height: 1.35;
+            margin-left: 44px;
+            font-size: 15px;
+
+            strong {
+                font-weight: 600;
+            }
+
+            .time {
+                display: block;
+                font-size: 13px;
+                color: #aeb6bb;
+                margin-top: 3px;
+            }
+        }
+    }
+}

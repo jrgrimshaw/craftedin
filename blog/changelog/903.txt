@@ -1,0 +1,17 @@
+------------
+Update 9.0.3
+------------
+
+- Many, many bug fixes.
+- Security updates and speed increases (removal of many unecessary database requests).
+- Design fixes.
+
+----------------------------------
+COMING SOON TO A WEBSITE NEAR YOU:
+----------------------------------
+
+- Responsive. We want CraftedIn to be perfectly optimised for smartphones, and while we have made a lot of progress the process is taking a while. Bear with us :-)
+- Pages (happy now @marty? ;P)
+- Reprogramming of the backend, and a lot of cleaning up (huge speed increases).
+- Bits of redesign.
+- And much, much more that I'll talk about soon.

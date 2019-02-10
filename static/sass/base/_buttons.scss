@@ -1,0 +1,115 @@
+// here is some code to create awesome buttons
+// usage is as follows:
+/*
+<a href="" class="button button-primary button-tiny">Testing</a>
+<a href="" class="button button-success">Testing</a>
+<a href="" class="button button-warning button-medium">Testing</a>
+<a href="" class="button button-gold button-large">Testing</a>
+*/
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type="submit"].button,
+button.button {
+    cursor: pointer;
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 17px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:hover {
+        transition: .2s;
+    }
+
+    &.wide {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+.button-tiny {
+    font-size: 12px;
+    padding: 3.5px 10px;
+}
+
+.button-small {
+    font-size: 13px;
+    padding: 5px 13px;
+}
+
+.button-medium {
+    font-size: 16px;
+    padding: 11px 18px;
+}
+
+.button-large {
+    font-size: 17px;
+    padding: 13px 25px;
+}
+
+.button-primary {
+    background: $color-blue;
+    color: #fff;
+    
+    &:hover {
+        background: darken($color-blue, 5%) !important;
+        color: #fff;
+    }
+}
+
+.button-success {
+    background: $color-green;
+    color: #fff;
+    
+    &:hover {
+        background: darken($color-green, 5%) !important;
+        color: #fff;
+    }
+}
+
+.button-warning {
+    background: $color-red;
+    color: #fff;
+    
+    &:hover {
+        background: darken($color-red, 5%) !important;
+        color: #fff;
+    }
+}
+
+.button-gold {
+    background: $color-gold;
+    color: #fff;
+    
+    &:hover {
+        background: darken($color-gold, 5%) !important;
+        color: #fff;
+    }
+}
+
+.button-boring {
+    background: #dfdfdf;
+    color: #606060;
+
+    &:hover {
+        background: darken(#dfdfdf, 5%) !important;
+        color: #555;
+    }
+}

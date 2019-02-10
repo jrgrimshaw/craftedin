@@ -1,0 +1,109 @@
+.pages {
+    padding: 15px;
+    background-image: url(../images/backgrounds/pages.jpg);
+    background-size: cover;
+}
+
+.no-pages {
+    width: 250px;
+    height: 300px;
+    margin: 65px auto;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    // background-color: rgba(255,255,255,0.5);
+    // border-radius: 10px;
+    // border-bottom: 2px solid #ddd;
+
+    span {
+        font-size: 80px;
+        line-height: 140px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        line-height: 35px;
+    }
+}
+
+a:hover > .pages-page {
+    opacity: 0.9;
+
+}
+
+.pages-end {
+    text-align: center;
+    font-size: 55px;
+    color: rgba(0,0,0,0.1);
+}
+
+.pages-page {
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: .2s;
+
+    .pages-page-filter {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 2px;
+    }
+
+    .pages-page-background {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100px;
+        padding: 15px 0 15px 15px;
+        
+        border-radius: 4px 0 0px 4px;
+        // border-right: 2px solid $accent-light;
+
+        img {
+            width: 100%;
+            border-radius: 100%;
+            border: 3px solid #fff;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .pages-page-main {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 15px;
+
+        h3 {
+            font-size: 23px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #ddd;
+        }
+    }
+
+    .float-right {
+        background-color: rgba(255,255,255,0.95);
+        height: 119px;
+        width: 140px;
+        display: block;
+        padding: 15px;
+        color: #fff;
+        border-radius: 0 2px 2px 0;
+        color: inherit;
+        text-shadow: none;
+        text-align: right;
+        border-left: 1px solid $accent-light;
+
+        .tag {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}

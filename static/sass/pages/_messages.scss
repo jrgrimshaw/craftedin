@@ -1,0 +1,199 @@
+.messages-inner {
+    padding: 15px;
+
+    .read-message {
+
+        .message-header {
+            img {
+                width: 39px;
+                border-radius: 3px;
+                margin-top: 4px;
+                margin-right: 10px;
+            }
+
+            .pre-name {
+                color: #999;
+                line-height: 1.75;
+                margin-right: 3px;
+            }
+
+            .subject {
+                border-top: 1px solid $accent-light;
+                border-bottom: 1px solid $accent-light;
+                padding: 10px 0;
+                margin-top: 8px;
+                font-size: 15px;
+                font-weight: 600;
+
+                .float-right {
+                    display: inline-block;
+                    font-size: 12.5px;
+                    font-weight: normal;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .message-body {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .message-footer {
+            padding-top: 15px;
+            border-top: 1px solid $accent-light;
+
+            .float-left {
+                a {
+                    margin-right: 5px;
+                }
+            }
+
+            .float-right {
+                a {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .messages-table {
+        display: table;
+        border-radius: 3px;
+        border: 1px solid $accent-light;
+        width: 100%;
+
+        .no-messages {
+            td {
+                width: 100%;
+                text-align: center;
+                padding: 50px 0;
+                color: $color-grey !important;
+
+                .icon {
+                    font-size: 70px;
+                    line-height: 1;
+                }
+
+                .message {
+                    margin-top: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+
+            td {
+                padding: 10px;
+
+                &.manage {
+                    padding: 10px 0 10px 10px !important;
+                }
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            thead {
+                text-align: left;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #aeb6bb;
+                font-weight: 600;
+                background-color: $accent-light-inner;
+                border-bottom: 1px solid $accent-light;
+
+                // Table header cell
+                th {
+                    padding: 10px;
+
+                    &.manage {
+                        padding: 10px 0 10px 10px !important;
+                    }
+                }
+
+                .manage {
+                    width: 1px;
+                }
+
+                .from {
+                    width: 180px;
+                }
+
+                .subject {
+                    
+                }
+
+                .date {
+                    width: 200px;
+                    text-align: right;
+                }
+            }
+
+            tbody {
+                tr {
+                    transition: .2s;
+                    border-radius: 3px;
+                    border-bottom: 1px solid $accent-light;
+
+                    &.new {
+                        font-weight: 700;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:hover {
+                        background-color: $accent-light-inner;
+                    }
+                }
+
+                .new-icon {
+                    display: block;
+                    vertical-align: top;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $color-blue;
+                    border-radius: 100%;
+                    margin: 0 auto;
+                }
+
+                .manage {
+                    width: 25px;
+                    text-align: center;
+                }
+
+                .date {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .messages-footer {
+        margin-top: 15px;
+    }
+
+    .pagination {
+        a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: #eee;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 25px;
+            color: #999;
+            margin-left: 5px;
+
+            &:hover, &.active {
+                background-color: #d9d9d9;
+                color: #7f7f7f;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@media screen and (max-width: 875px) {
+
+.content-main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-sidebar {
+    display: none;
+}
+
+
+.nav-logo {
+    .logo-plus {
+        display: none;
+    }
+}
+
+.nav-search {
+    display: none;
+    
+    .search-bar {
+        display: none;
+    }
+}
+
+.main-nav .float-right {
+    display: none;
+}
+
+}

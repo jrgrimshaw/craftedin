@@ -1,0 +1,121 @@
+.search {
+}
+
+.search-header {
+    font-size: 22px;
+    color: #888;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $accent-light-border;
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.search-time {
+    border-bottom: 1px solid $accent-light-border;
+    padding: 10px 0;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.search-body {
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #999;
+
+        span {
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 2px;
+        }
+    }
+}
+
+.search-area {
+    float: left;
+    padding: 15px;
+    margin-right: 20px;
+    width: calc(50% - 10px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .no-posts {
+        padding: 25px;
+    }
+}
+
+.search-bottom {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.search-posts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    h2 {
+        margin: 0;
+    }
+
+    .post {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid $accent-light;
+    }
+}
+
+.user {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $accent-light;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.user-left {
+    width: 50px;
+    margin-right: 15px;
+
+    img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+}
+
+.user-right {
+    margin-left: 65px;
+
+    h3 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    p.username {
+        color: $color-grey;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+
+    .user-info {
+        margin-top: 5px;
+
+        p {
+            font-size: 13px;
+            color: #888;
+
+            span {
+                margin-right: 2px;
+            }
+        }
+    }
+}

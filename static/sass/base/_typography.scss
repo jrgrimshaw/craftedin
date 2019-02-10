@@ -1,0 +1,69 @@
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}
+
+code {
+    display: inline-block;
+    font-family: monospace;
+}
+
+p {
+    line-height: 1.9;
+}
+
+a {
+    color: $color-link;
+    transition: .2s;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($color-link, 10%);
+    }
+}
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 3px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999;
+}
+
+.text-red { color: $color-red !important; }
+.text-orange { color: $color-orange !important; }
+.text-gold { color: $color-gold !important; }
+.text-green { color: $color-green !important; }
+.text-blue { color: $color-blue !important; }
+.text-purple { color: $color-purple !important; }
+.text-grey { color: $color-grey !important; }

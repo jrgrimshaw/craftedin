@@ -1,0 +1,117 @@
+.moderator-table {
+    display: table;
+    border-radius: 3px;
+    border: 1px solid $accent-light;
+    width: 100%;
+
+    .no-messages {
+        td {
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+            color: $color-grey !important;
+
+            .icon {
+                font-size: 70px;
+                line-height: 1;
+            }
+
+            .message {
+                margin-top: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+
+        td {
+            padding: 10px;
+
+            &.manage {
+                padding: 10px 0 10px 10px !important;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+
+        thead {
+            text-align: left;
+            color: #777;
+            background-color: $accent-light-inner;
+            border-bottom: 1px solid $accent-light;
+
+            // Table header cell
+            th {
+                padding: 10px;
+
+                &.manage {
+                    padding: 10px 0 10px 10px !important;
+                }
+            }
+
+            .id {
+                width: 90px;
+            }
+
+            .content {
+                
+            }
+
+            .date {
+                width: 150px;
+                text-align: right;
+            }
+
+            .actions {
+                width: 150px;
+            }
+        }
+
+        tbody {
+            tr {
+                transition: .2s;
+                border-radius: 3px;
+                border-bottom: 1px solid $accent-light;
+
+                &.new {
+                    font-weight: 700;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background-color: $accent-light-inner;
+                }
+            }
+
+            td {
+                vertical-align: middle;
+            }
+
+            .new-icon {
+                display: block;
+                vertical-align: top;
+                width: 8px;
+                height: 8px;
+                background-color: $color-blue;
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+
+            .manage {
+                width: 25px;
+                text-align: center;
+            }
+
+            .date {
+                text-align: right;
+            }
+        }
+    }
+}

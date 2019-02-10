@@ -1,0 +1,24 @@
+.tab-subheader-explore {
+	height: auto;
+	background-image: url(https://images.unsplash.com/photo-1468234847176-28606331216a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=12745e0afd6e8bf38b5a68dccf405e40);
+	// background-image: url(https://images.unsplash.com/photo-1468186402854-9a641fd7a7c4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8aefbf2e665c0cd935b21d21b133e91e);
+	background-size: cover;
+	background-position: 50% 75%;
+
+	&.breaking {
+		background-image: url(https://images.unsplash.com/photo-1454129170132-347ea87dc9dd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=836c7dc6aa62088c12507407564c2a4a);
+		background-position: 50% 40%;
+	}
+}
+
+.tab-subheader-explore-inner {
+	text-align: center;
+	padding: 100px 0 50px 0;
+
+	h1 {
+		font-size: 45px;
+		font-weight: 300;
+		color: #fff;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	}
+}

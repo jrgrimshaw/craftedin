@@ -1,0 +1,55 @@
+.error-page {
+    background-image: url(https://images.unsplash.com/photo-1457665934810-5e0f59ea1fce?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=236923ab25dac8096b5f3a494bd19b09);
+    background-color: #3f3f3f;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: calc(100vh - 60px);
+    min-height: 700px;
+    max-height: 1500px;
+    min-width: 1040px;
+
+    &.suspended {
+        background-image: url("../images/backgrounds/suspended.jpg");
+    }
+
+    .error-page-inner {
+        text-align: center;
+        padding-top: 260px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+        .error-badge {
+            display: inline-block;
+            font-size: 18px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 3px 7px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #fff;
+            margin-top: 10px;
+
+            code {
+                background-color: #3f3f3f;
+                border-radius: 4px;
+                padding: 5px 10px;
+                margin: 0 7px;
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            }
+        }
+
+        a {
+            margin-top: 25px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+    }
+}

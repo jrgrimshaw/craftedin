@@ -1,0 +1,11 @@
+------------
+Update 9.1.1
+------------
+
+- Various design and user experience improvements
+    - Search & Autosuggest
+    - Posts
+    - Sidebar
+    - Profiles
+- Many bug fixes, including a much improved subheader by @wheatley
+- And more!

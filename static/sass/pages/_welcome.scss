@@ -1,0 +1,55 @@
+.welcome {
+    width: 650px;
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 3px;
+        font-size: 35px;
+        color: #555;
+    }
+
+    p.subtitle {
+        text-align: center;
+        font-size: 16px;
+        color: #999;
+        margin-bottom: 20px;
+    }
+}
+
+.welcome-inner {
+    .welcome-body {
+        padding: 15px;
+
+        .user {
+            &:first-child {
+                border-top: 0;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+
+        &.bg {
+            background: url(../images/backgrounds/stardust.png);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .w-ml {
+            height: 119px;
+            margin: 100px 0;
+            
+            p {    
+                font-size: 70px;
+                font-weight: 100;
+                text-align: center;
+                color: #999;
+            }
+        }
+    }
+
+    .welcome-footer {
+        border-top: 1px solid $accent-light;
+        background-color: $accent-light-inner;
+        padding: 15px;
+    }
+}

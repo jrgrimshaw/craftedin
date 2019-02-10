@@ -1,0 +1,60 @@
+Options -Multiviews -Indexes +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+DirectorySlash Off
+
+# www requests redirect to no www
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# HTTP requests redirect to HTTPS
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Remove any trailing slashes
+RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
+
+# Make query strings seo friendly
+RewriteRule ^/?user/(.*)?$ user.php?user=$1 [L,QSA]
+RewriteRule ^/?page/(.*)?$ page.php?page=$1 [L,QSA]
+RewriteRule ^/?explore/(.*)?$ explore.php?page=$1 [L,QSA]
+RewriteRule ^/?welcome/(.*)?$ welcome.php?page=$1 [L,QSA]
+RewriteRule ^/?post/(.*)?$ post.php?post=$1 [L,QSA]
+
+RewriteRule ^/?account/settings?$ account-settings.php [L,QSA]
+RewriteRule ^/?account/password?$ account-password.php [L,QSA]
+RewriteRule ^/?account/security?$ account-security.php [L,QSA]
+RewriteRule ^/?account/pictures?$ account-pictures.php [L,QSA]
+RewriteRule ^/?account/plus?$ account-plus.php [L,QSA]
+RewriteRule ^/?account/pages?$ account-pages.php [L,QSA]
+
+RewriteRule ^/?messages/inbox?$ messages-inbox.php [L,QSA]
+RewriteRule ^/?messages/sent?$ messages-sent.php [L,QSA]
+RewriteRule ^/?messages/trash?$ messages-trash.php [L,QSA]
+RewriteRule ^/?messages/compose?$ messages-compose.php [L,QSA]
+
+RewriteRule ^/?premium/cancel?$ premium-cancel.php [L,QSA]
+RewriteRule ^/?premium/charge?$ premium-charge.php [L,QSA]
+RewriteRule ^/?premium/webhook?$ premium-webhook.php [L,QSA]
+
+RewriteRule ^/?new/post?$ post-new.php [L,QSA]
+
+RewriteRule ^/?legal/privacy?$ legal-privacy.php [L,QSA]
+
+RewriteRule ^/?moderator/reported-posts?$ moderator-reported-posts.php [L,QSA]
+RewriteRule ^/?moderator/reported-comments?$ moderator-reported-comments.php [L,QSA]
+RewriteRule ^/?moderator/reported-users?$ moderator-reported-users.php [L,QSA]
+RewriteRule ^/?moderator/approve-websites?$ moderator-approve-websites.php [L,QSA]
+RewriteRule ^/?moderator/manage?$ moderator-manage.php [L,QSA]
+RewriteRule ^/?moderator/approve?$ moderator-approve.php [L,QSA]
+RewriteRule ^/?moderator/remove?$ moderator-remove.php [L,QSA]
+
+# .php redirect to no extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R,L]
+
+# Error pages
+ErrorDocument 404 /error.php
+ErrorDocument 403 /error.php

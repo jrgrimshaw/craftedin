@@ -1,0 +1,116 @@
+.showcase {
+    margin-bottom: -20px;
+    margin-right: -20px;
+}
+
+.showcase-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: calc(25% - 20px);
+}
+
+.showcase-item-full {
+    background-image: url('../images/showcase.jpg');
+    background-size: cover;
+    border-radius: 3px;
+    text-align: center;
+    padding: 38px 20px;
+
+    h2 {
+        color: #fff;
+        font-size: 27px;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    a {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 100px;
+        display: inline-block;
+        color: #fff;
+        border: 1px solid #fff;
+
+        &:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+    }
+}
+
+.showcase-item-header {
+    width: 100%;
+    height: 70px;
+    border-radius: 3px 3px 0 0;
+}
+
+.showcase-item-body {
+    margin-top: -40px;
+    padding: 0 15px 15px 15px;
+    text-align: center;
+
+    .body-logo {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+
+        img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: 2px solid #fff;
+        }
+    }
+
+    h2 {
+        font-size: 19.5px;
+        font-weight: 600;
+    }
+
+    p {
+        color: #666;
+        margin-top: 10px;
+        font-size: 14.5px;
+
+        span {
+            margin-right: 1px;
+            font-size: 12px;
+        }
+    }
+}
+
+.showcase-item-footer {
+    text-align: center;
+    background-color: $accent-light-inner;
+    border-radius: 0 0 3px 3px;
+    padding: 15px;
+    border-top: 1px solid $accent-light;
+
+    .location {
+        font-size: 13px;
+        color: #999;
+        margin: 0 7px;
+    }
+
+    a {
+        display: inline-block;
+        color: #aaa;
+        font-size: 17px;
+        vertical-align: middle;
+        padding: 10px 10px 0 10px;
+        
+        &.facebook-icon:hover { color: #3b5998; }
+        &.twitter-icon:hover { color: #55acee; }
+        &.gplus-icon:hover { color: #dd4b39; }
+        &.linkedin-icon:hover { color: #0976b4; }
+    }
+}

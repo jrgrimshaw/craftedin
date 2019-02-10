@@ -1,0 +1,100 @@
+.auth-main {
+    background-color: #3f3f3f;
+}
+
+.auth {
+    width: 500px;
+
+    &.auth-login {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -200px;
+        margin-left: -250px;
+    }
+
+    &.auth-signup {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.auth-header {
+    padding: 0 0 50px 0;
+
+    .header-logo {
+        margin: 0 auto;
+        height: 50px;
+        width: 170px;
+        background: url("../images/logo/auth-logo.png") no-repeat;
+        @include image-2x("../images/logo/auth-logo@2x.png", 170px, 35px);
+        background-size: 170px auto;
+        background-position: 0 3px;
+        @include hide-text;
+        transition: .2s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.auth-body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    span {
+        font-size: 13px;
+        margin-right: 2px;
+    }
+
+    .account-type {
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $accent-light;
+
+        a {
+            float: left;
+            width: 50%;
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            color: #777;
+            background-color: $accent-light;
+
+            &:first-child { border-radius: 3px 0 0 3px; }
+            &:last-child { border-radius: 0 3px 3px 0; }
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            &.selected {
+                background-color: $color-blue;
+                color: #fff;
+            }
+
+            &.bselected {
+                background-color: #444;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.auth-footer {
+    font-size: 15px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+    a {
+        color: #fff;
+        border-bottom: 1px dotted #fff;
+    }
+}

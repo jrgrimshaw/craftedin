@@ -1,0 +1,21 @@
+.charity {
+
+}
+
+.charity-hero {
+    background-image: url('../images/backgrounds/charity.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 180px 0;
+
+    .hero-logo {
+        width: 600px;
+        height: 100px;
+        background-image: url('../images/charity/logo.png');
+        background-size: 600px 100px;
+        margin: 0 auto;
+    }
+}
+
+.charity-main {
+}

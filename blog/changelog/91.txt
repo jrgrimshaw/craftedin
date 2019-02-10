@@ -1,0 +1,25 @@
+----------
+Update 9.1
+----------
+
+- CRAFTEDIN PAGES! (Third icon from the right in the top bar)
+    - Pages Manager with insight statistics
+    - Create/modify pages and create a profile
+    - Manage members (editors)
+    - Post on the page
+    - And more!
+- New sidebar design + other parts of the website redesigned for ease of use and clarity
+- Forgot password
+- Rewritten "Who To Follow" algorithm. Now always shows 4 recommendations (suprisingly complicated...)
+- Uncountable bug fixes, as always
+- And lots more!
+
+------------------
+Message from James
+------------------
+
+I'm going through a lot at the moment, but I took some time out to get this update released because I didn't want to leave it much longer for you guys :-)
+I need to concentrate on college and the things going on in my life for the next couple of weeks (possibly shorter), so as the primary developer there won't be much development on the site for just a short while. I will be back developing soon, and the beta will be insane.
+I am, however, always generally on CraftedIn on my phone so I'll still be active in the community despite this.
+
+You guys are awesome, and I hope you enjoy this update.
